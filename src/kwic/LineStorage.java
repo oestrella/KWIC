@@ -15,10 +15,6 @@ public class LineStorage {
         this.lines.add(new ArrayList<>((words)));
     }
 
-    public List<List<String>> getLines() {
-        return this.lines;
-    }
-
     public String getWord(int lineIndex, int wordIndex) {
         return this.lines.get(lineIndex).get(wordIndex);
     }

@@ -1,10 +1,9 @@
 package kwic;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class KWIC {
-    public void execute(String file) throws FileNotFoundException, IOException {
+    public void execute(String file) throws IOException {
         LineStorage lines = new LineStorage();
         Input input = new Input();
         CircularShifter shifter = new CircularShifter();
@@ -26,7 +25,7 @@ public class KWIC {
 
     }
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    static void main() throws IOException {
         new KWIC().execute("input.txt");
     }
 }

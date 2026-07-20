@@ -8,7 +8,7 @@ public class CircularShifter {
     private final List<String> sLines;
 
     public CircularShifter() {
-        this.sLines = new ArrayList<String>();
+        this.sLines = new ArrayList<>();
     }
 
     public void setup(LineStorage lines) {
