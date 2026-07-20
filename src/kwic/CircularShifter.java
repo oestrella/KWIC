@@ -13,6 +13,9 @@ public class CircularShifter {
 
     public void setup(LineStorage lines) {
 
+        // Start with an empty ArrayList
+        sLines.clear();
+
         for (int lineIndex = 0; lineIndex < lines.getLineCount(); lineIndex++) {
             int size = lines.getWordCount(lineIndex);
 
@@ -48,7 +51,4 @@ public class CircularShifter {
         return sLines.get(index);
     }
 
-    public List<String> getShiftedLines() {
-        return this.sLines;
-    }
 }

@@ -14,15 +14,16 @@ public class KWIC {
 
         input.parse(file, lines);
         shifter.setup(lines);
+        alphabetizer.alpha(shifter);
+        output.print(alphabetizer);
 
-        // Used to test CircularShifter; Uncomment to try
-        for (int i = 0; i < shifter.getShiftedSize(); i++) System.out.println(shifter.getShiftedLine(i));
+        // Used to test CircularShifter; Uncomment line to try
+        //for (int i = 0; i < shifter.getShiftedSize(); i++) System.out.println(shifter.getShiftedLine(i));
+
+        // Used to test Alphabetizer; Uncomment line to try
+        //for (int i = 0; i < alphabetizer.getAlphaSize(); i++) System.out.println(alphabetizer.getAlphaLine(i));
 
 
-        // TODO: Alphabetizer alpha(),
-        // alphabetizer.alpha(shifter);
-        // TODO: Output print(),
-        // output.print(alphabetizer);
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
